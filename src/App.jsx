@@ -99,7 +99,7 @@ const Hero = () => {
   const y1 = useTransform(scrollY, [0, 500], [0, 200]);
 
   return (
-    <section className="min-h-screen flex items-center overflow-hidden pt-32 pb-20">
+    <section className="min-h-screen flex items-center overflow-hidden pt-24 md:pt-32 pb-16 md:pb-20">
       <div className="container relative z-10">
         <div className="grid lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7">
@@ -109,17 +109,17 @@ const Hero = () => {
               transition={{ duration: 0.8 }}
             >
               <span className="section-label">Executive Leadership in Infrastructure</span>
-              <h1 className="text-6xl md:text-8xl mb-8 leading-[0.9] text-gradient">
+              <h1 className="text-4xl sm:text-5xl md:text-7xl mb-6 md:mb-8 leading-[0.9] text-gradient">
                 ENGINEERING <br />
                 <span className="text-accent-gradient inline-block">THE NATION'S</span> <br />
                 LANDSCAPE
               </h1>
-              <p className="text-xl text-text-dim max-w-2xl mb-12 leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl text-text-dim max-w-2xl mb-10 md:mb-12 leading-relaxed">
                 Project Director with a legacy of 35+ years in civil engineering. Specializing in mega-bridge construction, multi-billion taka project management, and institutional leadership within the Roads and Highways Department.
               </p>
               
               <div className="flex flex-wrap gap-6 items-center">
-                <a href="#projects" className="btn-smart btn-primary px-8 py-4 text-lg">
+                <a href="#projects" className="btn-smart btn-primary px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg">
                   VIEW PORTFOLIO <ArrowUpRight size={20} />
                 </a>
                 <div className="flex items-center gap-4 text-text-dim">
@@ -136,17 +136,17 @@ const Hero = () => {
             </motion.div>
           </div>
 
-          <div className="lg:col-span-5 relative">
+          <div className="lg:col-span-5 relative mt-10 lg:mt-0">
             <motion.div 
               style={{ y: y1 }}
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1 }}
-              className="relative aspect-[4/5] rounded-[3rem] overflow-hidden border-4 border border-border shadow-[0_0_100px_rgba(59,130,246,0.15)] bg-surface"
+              className="relative aspect-[4/5] rounded-[2rem] md:rounded-[3rem] overflow-hidden border border-border shadow-[0_0_80px_rgba(59,130,246,0.25)] bg-surface"
             >
               <img src="/profile.png" alt="A.K. Shamsuddin Ahmed" className="w-full h-full object-cover" />
-              <div className="absolute inset-x-0 bottom-0 p-10 bg-gradient-to-t from-bg via-bg/40 to-transparent">
-                  <div className="flex items-center justify-between">
+              <div className="absolute inset-x-0 bottom-0 p-6 md:p-10 bg-gradient-to-t from-bg via-bg/40 to-transparent">
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                     <div>
                         <h3 className="text-2xl font-bold text-white">A.K. Shamsuddin Ahmed</h3>
                         <p className="text-primary font-bold text-sm tracking-[0.2em] uppercase">Superintending Engineer</p>
@@ -207,7 +207,7 @@ const ProjectsSection = () => {
                 <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
                     <div className="max-w-xl">
                         <span className="section-label">Select Portfolios</span>
-                        <h2 className="text-5xl md:text-6xl text-gradient">NATIONAL ASSETS <br /> UNDER MANAGEMENT</h2>
+                        <h2 className="text-4xl sm:text-5xl md:text-6xl text-gradient">NATIONAL ASSETS <br /> UNDER MANAGEMENT</h2>
                     </div>
                     <p className="text-text-dim max-w-sm border-l-2 border-primary pl-6 py-2">
                         Strategic oversight of infrastructure projects defining the next decade of connectivity in Bangladesh.
@@ -254,9 +254,9 @@ const SkillsBento = () => {
     return (
         <section id="expertise">
             <div className="container">
-                <div className="text-center mb-20">
+                <div className="text-center mb-16 md:mb-20">
                     <span className="section-label">Smart Competencies</span>
-                    <h2 className="text-5xl md:text-6xl text-gradient">COMMAND & CONTROL</h2>
+                    <h2 className="text-4xl sm:text-5xl md:text-6xl text-gradient">COMMAND & CONTROL</h2>
                 </div>
 
                 <div className="bento-grid">
@@ -370,7 +370,7 @@ const ExperienceTimeline = () => {
         <section id="experience" className="bg-surface/30 border-y border-border">
             <div className="container relative">
                 <div className="grid lg:grid-cols-12 gap-12">
-                    <div className="lg:col-span-5 sticky top-32 h-fit">
+                    <div className="lg:col-span-5 lg:sticky lg:top-32 h-fit mb-10 lg:mb-0">
                         <span className="section-label">Institutional Tenure</span>
                         <h2 className="text-5xl md:text-6xl text-gradient mb-8 leading-tight">THE LEADERSHIP <br /> JOURNEY</h2>
                         <p className="text-text-dim mb-10 leading-relaxed max-w-sm">From field engineering in donor-funded projects to executive decision-making at the national headquarters.</p>
@@ -463,7 +463,7 @@ const EducationSection = () => {
                 <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
                     <div className="max-w-2xl">
                         <span className="section-label">Credentials</span>
-                        <h2 className="text-5xl md:text-6xl text-gradient leading-tight">
+                        <h2 className="text-4xl sm:text-5xl md:text-6xl text-gradient leading-tight">
                             PROFESSIONAL PROFILE <br /> &amp; CV SNAPSHOT
                         </h2>
                     </div>
